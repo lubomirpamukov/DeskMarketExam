@@ -65,7 +65,7 @@ namespace DeskMarket.Services
             {
                 return null;
             }
-
+            // random comment to check git problem
             return new ProductEditViewModel
             {
                 Id = product.Id,
