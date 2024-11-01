@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
-
+using static DeskMarket.Common.CategoryConstants;
 namespace DeskMarket.ViewModels;
 
 public class CategoryViewModel
@@ -7,8 +7,8 @@ public class CategoryViewModel
     public int Id { get; set; }
 
     [Required]
-    [StringLength(20, MinimumLength = 3, ErrorMessage = "Category name must be between 3 and 20 characters.")]
+    [MinLength(MinNameLength, ErrorMessage = NameLengthErrorMessage)]
+    [MaxLength(MaxNameLength, ErrorMessage = NameMaxLengthErrorMessage)]
     public string Name { get; set; } = null!;
 }
 
-//To do make magic string to global constants

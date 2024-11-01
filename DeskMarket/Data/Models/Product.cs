@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using DeskMarket.Common;
 
 namespace DeskMarket.Data.Models;
 
@@ -10,15 +11,15 @@ public class Product
     public int Id { get; set; }
 
     [Required]
-    [MaxLength(60)]
+    [MaxLength(ProductConstants.MaxProductNameLength, ErrorMessage = ProductConstants.ProductNameMaxLengthErrorMessage)]
     public string ProductName { get; set; } = null!;
 
     [Required]
-    [MaxLength(250)]
+    [MaxLength(ProductConstants.MaxDescriptionLength, ErrorMessage = ProductConstants.DescriptionMaxLengthErrorMessage)]
     public string Description { get; set; } = null!;
 
     [Required]
-    [Range(1.00, 3000.00)]
+    [Range((double)ProductConstants.MinPrice, (double)ProductConstants.MaxPrice, ErrorMessage = ProductConstants.PriceRangeErrorMessage)]
     public decimal Price { get; set; }
 
     public string? ImageUrl { get; set; }
@@ -43,4 +44,3 @@ public class Product
 
     public virtual ICollection<ProductClient> ProductsClients { get; set; } = new List<ProductClient>();
 }
-//Todo make constants

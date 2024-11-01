@@ -1,4 +1,5 @@
 using DeskMarket.Data;
+using DeskMarket.Services;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
@@ -24,7 +25,11 @@ namespace DeskMarket
                 options.Password.RequireUppercase = false;
             })
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            // Register Custom application Services afterwards
             builder.Services.AddControllersWithViews();
+            builder.Services.AddTransient<IProductService, ProductService>();
+            builder.Services.AddTransient<ICartService, CartService>();
 
             var app = builder.Build();
 
