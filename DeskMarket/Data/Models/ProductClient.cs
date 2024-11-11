@@ -8,5 +8,5 @@ public class ProductClient
     public virtual Product Product { get; set; } = null!;
 
     public string ClientId { get; set; } = null!;
-    public virtual IdentityUser Client { get; set; } = null!;
+    public virtual ApplicationUser Client { get; set; } = null!;
 }

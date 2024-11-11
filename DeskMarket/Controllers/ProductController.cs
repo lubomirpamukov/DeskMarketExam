@@ -13,13 +13,13 @@ namespace DeskMarket.Controllers;
 [Authorize]
 public class ProductController
     (ApplicationDbContext context, 
-    UserManager<IdentityUser> userManager, 
+    UserManager<ApplicationUser> userManager, 
     IProductService productService,
     ICartService cartService
     ) : Controller
 {
     private readonly IProductService _productService = productService;
-    private readonly UserManager<IdentityUser> _userManager = userManager;
+    private readonly UserManager<ApplicationUser> _userManager = userManager;
     private readonly ICartService _cartService = cartService;
 
     [AllowAnonymous]

@@ -28,7 +28,7 @@ public class Product
     public string SellerId { get; set; } = null!;
 
     [Required]
-    public virtual IdentityUser Seller { get; set; } = null!;
+    public virtual ApplicationUser Seller { get; set; } = null!;
 
     [Required]
     public DateTime AddedOn { get; set; }
