@@ -20,4 +20,10 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.6" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DeskMarket.Common\DeskMarket.Common.csproj" />
+    <ProjectReference Include="..\DeskMarket.Services\DeskMarket.Services.csproj" />
+    <ProjectReference Include="..\DeskMarket.ViewModels\DeskMarket.ViewModels.csproj" />
+  </ItemGroup>
+
 </Project>

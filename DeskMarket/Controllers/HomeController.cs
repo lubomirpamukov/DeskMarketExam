@@ -1,4 +1,4 @@
-using DeskMarket.Models;
+using DeskMarket.ViewModels.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 

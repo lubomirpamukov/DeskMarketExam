@@ -12,7 +12,7 @@ using System.Globalization;
 namespace DeskMarket.Controllers;
 [Authorize]
 public class ProductController
-    (ApplicationDbContext context, 
+    (
     UserManager<ApplicationUser> userManager, 
     IProductService productService,
     ICartService cartService

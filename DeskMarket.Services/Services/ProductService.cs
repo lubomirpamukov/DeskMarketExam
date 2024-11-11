@@ -1,9 +1,6 @@
 ﻿using DeskMarket.Data;
 using DeskMarket.Data.Models;
 using DeskMarket.ViewModels;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.AspNetCore.Mvc.ModelBinding;
-using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 
 namespace DeskMarket.Services
