@@ -40,7 +40,7 @@ namespace DeskMarket.Services
 
             if (product == null)
             {
-                return null;
+                throw new ArgumentNullException(nameof(product));
             }
 
             var viewModel = new DeleteProductViewModel
@@ -58,9 +58,13 @@ namespace DeskMarket.Services
         {
             var product = await _dbContext.Products.FirstOrDefaultAsync(p => p.Id == id);
 
-            if (product == null || product.SellerId != userId)
+            if (product == null)
             {
-                return null;
+                throw new ArgumentNullException(nameof(product));
+            }
+            else if (product.SellerId != userId) 
+            {
+                throw new ArgumentException("User is not the seller");
             }
             // random comment to check git problem
             return new ProductEditViewModel
@@ -149,7 +153,7 @@ namespace DeskMarket.Services
 
             if (product == null)
             {
-                return null;
+                throw new ArgumentNullException(nameof(product));
             }
 
             bool hasBoughtProduct = await _dbContext.ProductsClients
