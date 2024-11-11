@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeskMarket.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b18300098d48fad1f7b0772a7a51d75d7e0539")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cb6b519a438663538df5bed59ef2ad02cc34b4d")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeskMarket.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DeskMarket.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -13,7 +13,7 @@ using System.Reflection;
 
 [assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("aspnet-DeskMarket-827aa371-cf1d-4b52-96c7-d1b66594c1fe")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("DeskMarket")]
-[assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
+[assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+98772b6ee515fb72533a3ed947e1bf73392b6c1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("DeskMarket")]
