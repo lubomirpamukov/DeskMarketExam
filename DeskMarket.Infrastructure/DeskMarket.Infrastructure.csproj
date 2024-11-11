@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DeskMarket.Common\DeskMarket.Common.csproj" />
     <ProjectReference Include="..\DeskMarket.Data\DeskMarket.Data.csproj" />
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
 </Project>
