@@ -66,7 +66,6 @@ namespace DeskMarket.Services
             {
                 throw new ArgumentException("User is not the seller");
             }
-            // random comment to check git problem
             return new ProductEditViewModel
             {
                 Id = product.Id,

@@ -17,6 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DeskMarket.Common\DeskMarket.Common.csproj" />
     <ProjectReference Include="..\DeskMarket.Data.Models\DeskMarket.Data.Models.csproj" />
   </ItemGroup>
 
