@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DeskMarket.Common\DeskMarket.Common.csproj" />
+    <ProjectReference Include="..\DeskMarket.Infrastructure\DeskMarket.Infrastructure.csproj" />
     <ProjectReference Include="..\DeskMarket.Services\DeskMarket.Services.csproj" />
     <ProjectReference Include="..\DeskMarket.ViewModels\DeskMarket.ViewModels.csproj" />
   </ItemGroup>
